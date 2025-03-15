@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时共享画板</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="room-selection">
+        <button id="create-room">创建新房间</button>
+        <input type="text" id="room-id" placeholder="输入房间号">
+        <button id="join-room">加入房间</button>
+    </div>
+
+    <div id="drawing-area" style="display: none;">
+        <div id="toolbar">
+            <label>颜色:
+                <input type="color" id="color-picker" value="#000000">
+            </label>
+            <label>粗细:
+                <input type="range" id="brush-size" min="1" max="10" value="2">
+            </label>
+            <button id="clear-canvas">清空画布</button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="room-id-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
