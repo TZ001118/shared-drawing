@@ -1,11 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
 }
 
 #room-selection {
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 #drawing-area {
@@ -14,25 +13,16 @@ body {
 
 canvas {
     border: 1px solid black;
-    cursor: crosshair;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 #toolbar {
-    display: flex;
-    justify-content: center;
     margin-bottom: 10px;
 }
 
-#room-id-display {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+button {
     padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
 }
